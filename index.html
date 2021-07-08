@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Font Awasome CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Simple Calculator Using JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container" id="Main">
+        <h1 class="text-center">Simple Calculator Using JavaScript</h1>
+        <div class="row justify-content-center">
+
+            <div class="col-10 col-md-8" id="Calculator">
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-8" id="display">
+
+                        <h4 id="displayText"></h4>
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn  align-self-center" onclick="Clear()">
+                        <h4>CLR</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="btnRow">
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('7')" id="btn7">
+                        <h4>7</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('8')" id="btn8">
+                        <h4>8</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('9')" id="btn9">
+                        <h4>9</h4>
+
+                    </div>
+                    <div class="col-3 col-md-2 singleBtn" onclick="Display('/')" id="btnDiv">
+                        <h5><i class="fas fa-divide"></i></h5>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="btnRow">
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('4')" id="btn4">
+                        <h4>4</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('5')" id="btn5">
+                        <h4>5</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('6')" id="btn6">
+                        <h4>6</h4>
+
+                    </div>
+                    <div class="col-3 col-md-2 singleBtn" onclick="Display('*')" id="btnMul">
+                        <h5><i class="fas fa-times"></i></h5>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="btnRow">
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('1')" id="btn1">
+                        <h4>1</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('2')" id="btn2">
+                        <h4>2</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('3')" id="btn3">
+                        <h4>3</h4>
+
+                    </div>
+                    <div class="col-3 col-md-2 singleBtn" onclick="Display('-')" id="btnSub">
+                        <h5><i class="fas fa-minus"></i></h5>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center" id="btnRow">
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('0')" id="btn0">
+                        <h4>0</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('.')" id="btnFrac">
+                        <h4>.</h4>
+
+                    </div>
+                    <div class="col-3 col-md-3 singleBtn" onclick="Display('+')" id="btnAdd">
+                        <h5><i class="fas fa-plus"></i></h5>
+
+                    </div>
+                    <div class="col-3 col-md-2 singleBtn" onclick="Calc()" id="btnEuu">
+                        <h5><i class="fas fa-equals"></i></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
